@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f6ff;
+  color: #2d1e4e;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #b993d6 0%, #8ca6db 100%);
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+#affirmation {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #fffde4;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(185, 147, 214, 0.08);
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  min-width: 290px;
+}
+.blocks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.block {
+  background: #e3d9fc;
+  border: 2px dashed #b993d6;
+  padding: 0.8em;
+  border-radius: 8px;
+  cursor: grab;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+.block:active, .block.dragging {
+  background: #c8b6e2;
+}
+#drop-zone {
+  min-height: 180px;
+  background: #f3effa;
+  border: 2px dashed #8ca6db;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#drop-zone .block {
+  border: 2px solid #b993d6;
+  background: #e9f7ef;
+  cursor: move;
+}
+button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.6em 1.3em;
+  border: none;
+  border-radius: 6px;
+  background: #8ca6db;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+button:hover {
+  background: #b993d6;
+}
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  color: #b993d6;
+  font-size: 0.95em;
+  background: #fafaff;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boundaries Builder</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Boundaries Builder</h1>
+    <p>Empower yourself: Define, arrange, and visualize your personal boundaries.</p>
+    <div id="affirmation"></div>
+  </header>
+  
+  <main>
+    <section id="blocks-panel">
+      <h2>Boundary Blocks</h2>
+      <div class="blocks-list">
+        <div class="block" draggable="true" data-type="Time">⏰ Time</div>
+        <div class="block" draggable="true" data-type="Space">📍 Space</div>
+        <div class="block" draggable="true" data-type="Communication">💬 Communication</div>
+        <div class="block" draggable="true" data-type="Energy">⚡ Energy</div>
+        <div class="block" draggable="true" data-type="Emotional">❤️ Emotional</div>
+      </div>
+    </section>
+    
+    <section id="builder-section">
+      <h2>Your Boundaries</h2>
+      <div id="drop-zone">
+        <p>Drag blocks here to define your boundaries!</p>
+      </div>
+      <button id="export-pdf">Export as PDF</button>
+      <button id="export-image">Export as Image</button>
+      <button id="save-local">Save</button>
+      <button id="load-local">Load</button>
+    </section>
+  </main>
+  
+  <footer>
+    <small>&copy; 2025 Boundaries Builder. Your journey matters.</small>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
